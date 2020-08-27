@@ -1,0 +1,105 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Monospace';
+    overflow: hidden;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    padding: 10px 5vw;
+}
+
+header > h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: 50%;
+}
+
+article > img {
+    max-height: 100%;
+}
+
+article > section {
+    max-width: 25%;
+}
+
+article > section > h1 {
+    font-size: 3rem;
+}
+
+article > section > p {
+    font-size: 1.3rem;
+}
+
+article > section > button {
+    margin-top: 20px;
+    background-color: black;
+    font-size: 1.3rem;
+    color: white;
+    border: none;
+    outline: none;
+    font-family: 'Monospace';
+    padding: 25px;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    article > img {
+        max-width: 80%;
+    }
+
+    article > section > h1 {
+        font-size: 1.5rem;
+    }
+
+    article > section > p {
+        font-size: 1rem;
+    }
+
+    article > section > button {
+        margin-top: 10px;
+        background-color: black;
+        font-size: 1rem;
+        color: white;
+        border: none;
+        outline: none;
+        font-family: 'Monospace';
+        padding: 25px;
+        cursor: pointer;
+    }
+
+    body {
+        justify-content: flex-start;
+    }
+
+    article > section {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
