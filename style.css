@@ -11,11 +11,13 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 header {
     padding: 10px 5vw;
+    position: absolute;
+    top: 0;
 }
 
 header > h2 {
@@ -60,6 +62,8 @@ article > section > button {
 
 footer {
     width: 100%;
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: center;
 }
@@ -91,15 +95,11 @@ footer {
 
     body {
         justify-content: flex-start;
+        padding-top: 50px;
     }
 
     article > section {
         max-width: 100%;
         padding: 20px;
-    }
-
-    footer {
-        position: absolute;
-        bottom: 0;
     }
 }
